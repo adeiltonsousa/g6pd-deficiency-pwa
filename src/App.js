@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <SearchContext.Provider value={value}>
         <SearchContext.Consumer>
-          {({ onFilter, clearFilter, filter }) => (
+          {({ filter, onFilter, clearFilter }) => (
             <div className={classes.root}>
               <AppBar position="fixed" color="primary">
                 <Toolbar>
@@ -80,9 +80,9 @@ class App extends Component {
               </AppBar>
 
               {valueNavigationMenu === 0 ? (
-                <MedicinesNotAllowed {...{ clearFilter, filter }} />
+                <MedicinesNotAllowed {...{ filter, clearFilter }} />
               ) : (
-                <MedicinesAllowed {...{ clearFilter, filter }} />
+                <MedicinesAllowed {...{ filter, clearFilter }} />
               )}
 
               <BottomNavigation

@@ -53,12 +53,35 @@ class MedicinesNotAllowed extends Component {
     row: {}
   };
 
-  componentWillMount() {
-    this.setState({ loading: true });
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.filter && nextProps.filter !== '') {
+      const { filter } = nextProps;
+      const { rows } = this.state;
+      let rowsFilter = rows;
+
+      rowsFilter = rows.filter(value => {
+        return (
+          value.activeSubstance.toLowerCase().indexOf(filter.toLowerCase()) !==
+            -1 ||
+          (value.category &&
+            value.category.toLowerCase().indexOf(filter.toLowerCase()) !== -1)
+        );
+      });
+
+      this.setState({
+        rows: rowsFilter
+      });
+    } else {
+      this.getMedicinesNotAllowed();
+    }
   }
 
   componentDidMount() {
     this.getMedicinesNotAllowed();
+  }
+
+  componentWillUnmount() {
+    this.props.clearFilter();
   }
 
   handleOpen = () => this.setState({ open: true });
@@ -66,11 +89,11 @@ class MedicinesNotAllowed extends Component {
   handleClose = () => this.setState({ open: false });
 
   getMedicinesNotAllowed = async () => {
-    const response = await getMedicinesNotAllowed().then(response => {
-      return response;
-    });
+    this.setState({ loading: true });
 
-    this.setState({ loading: false, rows: response });
+    const rows = await getMedicinesNotAllowed().then(res => res);
+
+    this.setState({ loading: false, rows });
   };
 
   showMedicineInfo = row => {
@@ -138,7 +161,9 @@ class MedicinesNotAllowed extends Component {
 }
 
 MedicinesNotAllowed.propTypes = {
-  classes: PropTypes.object.isRequired
+  filter: PropTypes.string,
+  classes: PropTypes.object.isRequired,
+  clearFilter: PropTypes.func
 };
 
 export default withRoot(withStyles(styles)(MedicinesNotAllowed));
