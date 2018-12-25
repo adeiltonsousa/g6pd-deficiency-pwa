@@ -6,14 +6,16 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from './withRoot';
 
-import { DrugsNotAllowed, DrugsAllowed } from './components/MedicationProvider';
+import SearchMedicines from './components/SearchMedicines';
+import {
+  MedicinesNotAllowed,
+  MedicinesAllowed
+} from './components/MedicinesProvider';
 
 const SearchContext = React.createContext({
   filter: null,
@@ -28,7 +30,7 @@ const styles = theme => ({
   grow: {
     flexGrow: 1
   },
-  menuNavigation: {
+  navigationMenu: {
     position: 'fixed',
     width: '100%',
     bottom: 0
@@ -45,7 +47,7 @@ class App extends Component {
 
   clearFilter = () => this.setState({ filter: null });
 
-  handleChange = (event, value) =>
+  handleChangeNavigationMenu = (event, value) =>
     this.setState({ valueNavigationMenu: value });
 
   render() {
@@ -73,20 +75,21 @@ class App extends Component {
                   >
                     G6PD
                   </Typography>
-                  <IconButton color="inherit">
-                    <SearchIcon />
-                  </IconButton>
+                  <SearchMedicines {...{ onFilter }} />
                 </Toolbar>
               </AppBar>
 
-              <DrugsNotAllowed {...{ clearFilter, filter }} />
-              <DrugsAllowed {...{ clearFilter, filter }} />
+              {valueNavigationMenu === 0 ? (
+                <MedicinesNotAllowed {...{ clearFilter, filter }} />
+              ) : (
+                <MedicinesAllowed {...{ clearFilter, filter }} />
+              )}
 
               <BottomNavigation
                 value={valueNavigationMenu}
-                onChange={this.handleChange}
+                onChange={this.handleChangeNavigationMenu}
                 showLabels
-                className={classes.menuNavigation}
+                className={classes.navigationMenu}
               >
                 <BottomNavigationAction
                   label="Não Permitidos"
