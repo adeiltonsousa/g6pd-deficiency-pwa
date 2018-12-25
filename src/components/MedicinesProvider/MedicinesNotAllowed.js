@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
@@ -42,6 +43,9 @@ const styles = theme => ({
       backgroundColor: theme.palette.background.default,
       cursor: 'pointer'
     }
+  },
+  label: {
+    fontWeight: 'bold'
   }
 });
 
@@ -147,8 +151,38 @@ class MedicinesNotAllowed extends Component {
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title"
         >
-          <DialogTitle id="form-dialog-title">{row.category}</DialogTitle>
-          <DialogContent />
+          <DialogTitle id="form-dialog-title">
+            Medicamento Não Permitido
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText className={classes.label}>
+              Substância Ativa:
+              <br />
+            </DialogContentText>
+            <DialogContentText>{row.activeSubstance}</DialogContentText>
+
+            <DialogContentText className={classes.label}>
+              Categoria:
+              <br />
+            </DialogContentText>
+            <DialogContentText>{row.category}</DialogContentText>
+
+            <DialogContentText className={classes.label}>
+              Nome Comercial:
+              <br />
+            </DialogContentText>
+            <DialogContentText>
+              {row.commercialName ? row.commercialName.join(', ') : ''}
+            </DialogContentText>
+
+            <DialogContentText className={classes.label}>
+              Fabricante:
+              <br />
+            </DialogContentText>
+            <DialogContentText>
+              {row.manufacturer ? row.manufacturer.join(', ') : ''}
+            </DialogContentText>
+          </DialogContent>
           <DialogActions>
             <Button color="primary" onClick={this.handleClose}>
               Ok
