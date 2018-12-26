@@ -19,7 +19,7 @@ export default [
     id: uuid.v4(),
     activeSubstance: 'Ácido Nalidíxico',
     category: 'Antibacteriano (quinolona)',
-    commercialName: ['Ácido Nalidixico', 'Naluril', 'Wintomylon'],
+    commercialName: ['Ácido Nalidixico®', 'Naluril', 'Wintomylon'],
     manufacturer: ['Cibran', 'Cazi', 'Sanofi Winthrop']
   }
 ];
