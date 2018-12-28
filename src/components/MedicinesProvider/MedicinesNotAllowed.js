@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+// Packages
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+// Material UI
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -16,9 +18,11 @@ import TableRow from '@material-ui/core/TableRow';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../../withRoot';
 
+// Services
 import { getMedicinesNotAllowed } from '../../services/api';
 
-import Loading from '../Loading';
+// UI
+import Loading from '../UI//Loading';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -167,21 +171,29 @@ class MedicinesNotAllowed extends Component {
             </DialogContentText>
             <DialogContentText>{row.category}</DialogContentText>
 
-            <DialogContentText className={classes.label}>
-              Nome Comercial:
-              <br />
-            </DialogContentText>
-            <DialogContentText>
-              {row.commercialName ? row.commercialName.join(', ') : ''}
-            </DialogContentText>
+            {row.commercialName && row.commercialName.length > 0 && (
+              <Fragment>
+                <DialogContentText className={classes.label}>
+                  Nome Comercial:
+                  <br />
+                </DialogContentText>
+                <DialogContentText>
+                  {row.commercialName.join(', ')}
+                </DialogContentText>
+              </Fragment>
+            )}
 
-            <DialogContentText className={classes.label}>
-              Fabricante:
-              <br />
-            </DialogContentText>
-            <DialogContentText>
-              {row.manufacturer ? row.manufacturer.join(', ') : ''}
-            </DialogContentText>
+            {row.manufacturer && row.manufacturer.length > 0 && (
+              <Fragment>
+                <DialogContentText className={classes.label}>
+                  Fabricante:
+                  <br />
+                </DialogContentText>
+                <DialogContentText>
+                  {row.manufacturer.join(', ')}
+                </DialogContentText>
+              </Fragment>
+            )}
           </DialogContent>
           <DialogActions>
             <Button color="primary" onClick={this.handleClose}>

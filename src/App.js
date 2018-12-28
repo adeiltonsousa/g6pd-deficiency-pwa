@@ -1,6 +1,8 @@
+// Packages
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// Material UI
 import AppBar from '@material-ui/core/AppBar';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -11,7 +13,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from './withRoot';
 
-import SearchMedicines from './components/SearchMedicines';
+// UI
+import SearchMedicines from './components/UI/SearchMedicines';
+
+// Components
 import {
   MedicinesNotAllowed,
   MedicinesAllowed

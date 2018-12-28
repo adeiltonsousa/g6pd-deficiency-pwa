@@ -1,3 +1,4 @@
+// Data
 import medicinesNotAllowed from '../data/medicinesNotAllowed';
 import medicinesAllowed from '../data/medicinesAllowed';
 

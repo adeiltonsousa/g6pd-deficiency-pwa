@@ -1,4 +1,7 @@
+// Packages
 import React from 'react';
+
+// Material UI
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import green from '@material-ui/core/colors/green';
 import blue from '@material-ui/core/colors/blue';
