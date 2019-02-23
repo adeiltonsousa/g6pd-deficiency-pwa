@@ -50,38 +50,38 @@ export default [
   },
   {
     id: uuid.v4(),
-    substanciaAtiva: 'Aminopirina TAnti-reurnático',
-    categoria: '',
-    nomeComercial: '--I',
+    substanciaAtiva: 'Aminopirina',
+    categoria: 'Anti-reumático',
+    nomeComercial: [],
     fabricante: []
   },
   {
     id: uuid.v4(),
-    substanciaAtiva: 'A::Ii; -i ina',
+    substanciaAtiva: 'Antipirina',
     categoria: 'Analgésico e Antipirético',
-    nomeComercial: 'Auditol®',
-    fabricante: 'Syndielabo-Espasil'
+    nomeComercial: ['Auditol®'],
+    fabricante: ['Synthelabo-Espasil']
   },
   {
     id: uuid.v4(),
-    substanciaAtiva: 'Vitamina C (Ácido Ascárbico)',
+    substanciaAtiva: 'Vitamina C (Ácido Ascórbico)',
     categoria: 'Vitamina Hidrossolúvel',
-    nomeComercial: 'Cebion®,Energil C®,Redoxon®,Cewin®Roche',
-    fabricante: 'Merck LegrandSanofi Winthrop'
+    nomeComercial: ['Cebion®', 'Energil C®', 'Redoxon®', 'Cewin®'],
+    fabricante: ['Merck', 'Legrand', 'Roche', 'Sanofi Winthrop']
   },
   {
     id: uuid.v4(),
     substanciaAtiva: 'Astemizol',
     categoria: 'Anti-histamínico, antialérgico não sedante',
-    nomeComercial: 'Cilergil®,Hisnianal®,Hisnot®Farmasa',
-    fabricante: 'CilagJanssen F'
+    nomeComercial: ['Cilergil®', 'Hismanal®', 'Hisnot®'],
+    fabricante: ['Cilag', 'Janssen', 'Farmasa']
   },
   {
     id: uuid.v4(),
     substanciaAtiva: 'Azatadina',
-    categoria: 'Anti-histaminico, sedativo',
-    nomeComercial: 'Cedrin®',
-    fabricante: 'Schering'
+    categoria: 'Anti-histamínico, sedativo',
+    nomeComercial: ['Cedrin®'],
+    fabricante: ['Schering']
   },
   {
     id: uuid.v4(),
@@ -93,14 +93,14 @@ export default [
   {
     id: uuid.v4(),
     substanciaAtiva: 'Cetirizina',
-    categoria: 'Anti-histaminico, antiasmático',
-    nomeComercial: 'Cetrizin®, Zetir®,Zyrtec®',
-    fabricante: 'Sintofarma AbbottGlaxo'
+    categoria: 'Anti-histamínico, antiasmático',
+    nomeComercial: ['Cetrizin®', 'Zetir®', 'Zyrtec®'],
+    fabricante: ['Sintofarma', 'Abbott', 'Glaxo']
   },
   {
     id: uuid.v4(),
-    substanciaAtiva: '',
-    categoria: 'Cloroguanidina',
+    substanciaAtiva: 'Cloroguanidina',
+    categoria: '',
     nomeComercial: [],
     fabricante: []
   },
@@ -108,22 +108,22 @@ export default [
     id: uuid.v4(),
     substanciaAtiva: 'Cloroquina',
     categoria: 'Antimalárico',
-    nomeComercial: 'Clopirim®, Cloroquina®',
-    fabricante: 'Quimioterápica Brasileira Bergamo'
+    nomeComercial: ['Clopirim®', 'Cloroquina®'],
+    fabricante: ['Quimioterápica Brasileira Bergamo']
   },
   {
     id: uuid.v4(),
     substanciaAtiva: 'Clorfeniramina (clorfenamina)',
-    categoria: 'Anti-histaminico',
-    nomeComercial: 'Benegrip®,Cheracap®,Resfry®,Termigripe C®Luper',
-    fabricante: 'NewlabRhodiaNeo-Química'
+    categoria: 'Anti-histamínico',
+    nomeComercial: ['Benegrip®', 'Cheracap®', 'Resfry®', 'Termigripe C®'],
+    fabricante: ['Newlab', 'Rhodia', 'Neo-Química', 'Luper']
   },
   {
     id: uuid.v4(),
     substanciaAtiva: 'Ciproeptadina',
     categoria: 'Anti-histamínico',
-    nomeComercial: 'Periatin®',
-    fabricante: 'Prodome'
+    nomeComercial: ['Periatin®'],
+    fabricante: ['Prodome']
   },
   {
     id: uuid.v4(),
@@ -136,8 +136,8 @@ export default [
     id: uuid.v4(),
     substanciaAtiva: 'Dexclorfeniramina',
     categoria: 'Anti-histamínico',
-    nomeComercial: 'Polaramine®, Histamin®',
-    fabricante: 'Schering-Plough Neo-Química'
+    nomeComercial: ['Polaramine®', 'Histamin®'],
+    fabricante: ['Schering-Plough', 'Neo-Química']
   },
   {
     id: uuid.v4(),
@@ -150,161 +150,152 @@ export default [
     id: uuid.v4(),
     substanciaAtiva: 'Doxorrubicina',
     categoria: 'Antineoplásico',
-    nomeComercial:
-      'Adriblastina®, Doxorrubicina®, Doxorubicina®,Rubex®Biosintética',
-    fabricante: 'Pharmacia GüntherBristol-Myers Squibb'
-  },
-  {
-    id: uuid.v4(),
-    substanciaAtiva: '',
-    categoria: '',
-    nomeComercial: [],
-    fabricante: []
-  },
-  {
-    id: uuid.v4(),
-    substanciaAtiva: '',
-    categoria: '',
-    nomeComercial: [],
-    fabricante: []
-  },
-  {
-    substanciaAtiva: 'Substância Ativa',
-    categoria: 'Categoria',
-    nomeComercial: 'Nome Comercial',
-    fabricante: 'Fabricante'
+    nomeComercial: [
+      'Adriblastina®',
+      'Doxorrubicina®',
+      'Doxorubicina®',
+      'Rubex®'
+    ],
+    fabricante: ['Pharmacia', 'Günther', 'Biosintética', 'Bristol-Myers Squibb']
   },
   {
     substanciaAtiva: 'Elastina',
     categoria: 'Anti-histamínico',
-    nomeComercial: '',
-    fabricante: ''
+    nomeComercial: [],
+    fabricante: []
   },
   {
     substanciaAtiva: 'Estreptomicina',
     categoria: 'Antibiótico bacteriostático',
-    nomeComercial: '',
+    nomeComercial: [],
     fabricante: []
   },
   {
     substanciaAtiva: 'Fenacetina',
     categoria: 'Analgésico e antipirético',
-    nomeComercial: '',
+    nomeComercial: [],
     fabricante: []
   },
   {
     substanciaAtiva: 'Fenilbutazona',
     categoria: 'Antiinflamatório',
-    nomeComercial: 'Butazolidina®, Butazonil®',
-    fabricante: 'Novartis Teuto-Brasileiro'
+    nomeComercial: ['Butazolidina®', 'Butazonil®'],
+    fabricante: ['Novartis', 'Teuto-Brasileiro']
   },
   {
     substanciaAtiva: 'Fenitoína',
     categoria: 'Antiepiléptico',
-    nomeComercial: 'Hidantal® Epelin®, Sereium®',
-    fabricante: 'Sarsa Aché Novaquímica'
+    nomeComercial: ['Hidantal®', 'Epelin®', 'Sereium®'],
+    fabricante: ['Sarsa', 'Aché', 'Novaquímica']
   },
   {
     substanciaAtiva: 'Hidroxizina',
     categoria: 'Anti-histamínico',
-    nomeComercial: '',
+    nomeComercial: [],
     fabricante: []
   },
   {
     substanciaAtiva: 'Isoniazida',
     categoria: 'Antibacteriano',
-    nomeComercial: 'Isoniazida®',
-    fabricante: 'União Química'
+    nomeComercial: ['Isoniazida®'],
+    fabricante: ['União Química']
   },
   {
     substanciaAtiva: 'L-Dopa',
     categoria: 'Antiparkinsoniano .',
-    nomeComercial: 'Prolopa0,Cronomet®,Sinemet®Prodome',
-    fabricante: 'RocheMerck Sharp & Dohme'
+    nomeComercial: ['Prolopa®', 'Cronomet®', 'Sinemet®'],
+    fabricante: ['Roche', 'Merck Sharp & Dohme', 'Prodome']
   },
   {
     substanciaAtiva: 'Loratadina',
-    categoria: 'Anti-histaminico',
-    nomeComercial: 'Claritin®, Loranil®',
-    fabricante: 'Schering-Plough Libbs'
+    categoria: 'Anti-histamínico',
+    nomeComercial: ['Claritin®', 'Loranil®'],
+    fabricante: ['Schering-Plough', 'Libbs']
   },
   {
     substanciaAtiva: 'Mequitazina',
-    categoria: 'Anti-histamínico, antialérgico-',
-    nomeComercial: 'Primasone®',
-    fabricante: 'Rhodia'
+    categoria: 'Anti-histamínico, antialérgico',
+    nomeComercial: ['Primasone®'],
+    fabricante: ['Rhodia']
   },
   {
-    substanciaAtiva: 'Oyatomkia',
-    categoria: 'Anti-histamink.)',
-    nomeComercial: '',
-    fabricante: '1'
+    substanciaAtiva: 'Oxatomida',
+    categoria: 'Anti-histamínico',
+    nomeComercial: [],
+    fabricante: []
   },
   {
-    substanciaAtiva: 'Para.-et:-.:niol',
-    categoria: 'Analgésico e A. f 1-: Ipir éfi c o',
-    nomeComercial:
-      'Cefaiex. ,Dôrico®,Tylenol®, Tylex®Dorilax®, Cefalium® Saridon®Aché Roche',
-    fabricante: 'GeyerSanofl Winthrop Cilag'
+    substanciaAtiva: 'Paracetamol',
+    categoria: 'Analgésico e Antipirético',
+    nomeComercial: [
+      'Cefalex®',
+      'Dôrico®',
+      'Tylenol®',
+      'Tylex®',
+      'Dorilax®',
+      'Cefalium®',
+      'Saridon®'
+    ],
+    fabricante: ['Geyer', 'Sanofi Winthrop', 'Cilag', 'Aché', 'Roche']
   },
   {
     substanciaAtiva: 'Piramidona',
     categoria: 'Analgésico e antipirético',
-    nomeComercial: '',
+    nomeComercial: [],
     fabricante: []
   },
   {
-    substanciaAtiva: 'Pirimf..tamina',
+    substanciaAtiva: 'Pirimetamina',
     categoria: 'Antimalárico',
-    nomeComercial: 'uár:.-prim®',
-    fabricante: 'Weilcome-Zeneca'
+    nomeComercial: ['Daraprim®'],
+    fabricante: ['Wellcome-Zeneca']
   },
   {
-    substanciaAtiva: 'Procaiiiamida',
-    categoria: 'Antiarritmic9',
-    nomeComercial: 'Procamide®',
-    fabricante: 'Zambon'
+    substanciaAtiva: 'Procainamida',
+    categoria: 'Antiarrítmico',
+    nomeComercial: ['Procamide®'],
+    fabricante: ['Zambon']
   },
   {
     substanciaAtiva: 'Quinacrina',
     categoria: 'Antimalárico',
-    nomeComercial: '',
+    nomeComercial: [],
     fabricante: []
   },
   {
     substanciaAtiva: 'Quinina',
     categoria: 'Antimalárico',
-    nomeComercial: 'Paluquina®, Quinino®',
-    fabricante: 'Quimioterápica Brasileira Vital Brazil'
+    nomeComercial: ['Paluquina®', 'Quinino®'],
+    fabricante: ['Quimioterápica Brasileira', 'Vital Brazil']
   },
   {
     substanciaAtiva: 'Sulfisoxazole',
     categoria: 'Sulfonamida',
-    nomeComercial: '',
+    nomeComercial: [],
     fabricante: []
   },
   {
     substanciaAtiva: 'Sulfadiazina',
     categoria: 'Sulfonamida',
-    nomeComercial: 'Sulfadiazina®, Triglobe® Triglobe F®',
-    fabricante: 'Neo-Química Astra'
+    nomeComercial: ['Sulfadiazina®', 'Triglobe®', 'Triglobe F®'],
+    fabricante: ['Neo-Química', 'Astra']
   },
   {
     substanciaAtiva: 'Sulfametoxipiridazina',
     categoria: 'Sulfonamida (antimalárico)',
-    nomeComercial: 'Nicosulfan®, Periodine®',
-    fabricante: 'Elofar  Simões'
+    nomeComercial: ['Nicosulfan®', 'Periodine®'],
+    fabricante: ['Elofar', 'Simões']
   },
   {
     substanciaAtiva: 'Terfenadina',
-    categoria: 'Anti-histamínico_',
-    nomeComercial: 'Fenasil®,Histadane®, Teldane®',
-    fabricante: 'SintofarmaCibranMerrell Lepetit'
+    categoria: 'Anti-histamínico',
+    nomeComercial: ['Fenasil®', 'Histadane®', 'Teldane®'],
+    fabricante: ['Sintofarma', 'Cibran', 'Merrell Lepetit']
   },
   {
-    substanciaAtiva: 'Trirnetoprima',
+    substanciaAtiva: 'Trimetoprima',
     categoria: 'Antibacteriano',
-    nomeComercial: 'Bactrim®',
-    fabricante: 'Roche'
+    nomeComercial: ['Bactrim®'],
+    fabricante: ['Roche']
   }
 ];

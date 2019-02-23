@@ -92,247 +92,355 @@ export default [
       'I.Q.C.'
     ]
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Ciprofloxacino',
     categoria: 'Antibacteriano (fluorquinolona)',
-    nomeComercial: ['Biamoti1®', 'Ciflox®', 'Cifloxina®', 'Ciloxan®', 'Cipro®', 'Ciprofloxacina®', 'PROCIN®', 'Quinoflox®'],
-    fabricante: ['Frumtost', 'Aché', 'Bergamo', 'Alcon', 'Bayer', 'Biosintética', 'Schering-Plough', 'União Química']
+    nomeComercial: [
+      'Biamoti1®',
+      'Ciflox®',
+      'Cifloxina®',
+      'Ciloxan®',
+      'Cipro®',
+      'Ciprofloxacina®',
+      'PROCIN®',
+      'Quinoflox®'
+    ],
+    fabricante: [
+      'Frumtost',
+      'Aché',
+      'Bergamo',
+      'Alcon',
+      'Bayer',
+      'Biosintética',
+      'Schering-Plough',
+      'União Química'
+    ]
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Co-trimoxazol',
     categoria: 'Bactericida',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Dapsona',
     categoria: 'Sulfona',
     nomeComercial: ['Dapsona®', 'Sulfon®'],
     fabricante: ['Sanval', 'Brasifa']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Diamino-difenilsulfona',
     categoria: 'Sulfona',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Dimercaprol',
     categoria: '',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Enalapril (maleato)',
     categoria: 'Anti-Hipertensivo',
     nomeComercial: ['Atens®', 'Eupressin®', 'Renitec®'],
     fabricante: ['Farmasa', 'Biosintética', 'Merck', 'Sharp & Dohme']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Fenil-hidrazina',
     categoria: 'Hemolítico',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Fluotane',
     categoria: 'Analgésico',
     nomeComercial: [],
     fabricante: ['Wyeth']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Furaltadona',
     categoria: 'Antibacteriano (nitrofurano)',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Furazolidona',
     categoria: 'Antibacteriano (nitrofurano)',
     nomeComercial: ['GIARLAM®'],
     fabricante: ['UCI-Farma']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Furmetonol',
     categoria: 'Bactericida',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Halotano',
     categoria: 'Anestésico',
     nomeComercial: ['Fluothane', 'Halothane', 'Halotano'],
     fabricante: ['Welcome-ICI', 'Wyeth', 'Hoechst']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Hidralazina',
     categoria: 'Anti-hipertensivo',
     nomeComercial: ['Apresolina®', 'Hidralazina®', 'Lowpress®', 'Nepresol®'],
     fabricante: ['Novartis', 'Sanval', 'Cazi', 'Cristália']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Hidrocloreto de Tolueno',
     categoria: '',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Hidroxicloroquina',
     categoria: 'Antimalárico',
     nomeComercial: ['Plaquinol®'],
     fabricante: ['Sanofi Winthrop']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Metamizol_',
     categoria: 'Analgésico e Antipirético',
-    nomeComercial: ['Anador®', 'Analgex®', 'Baralgin®', 'Conmel®', 'Debela®', 'Dipirona®', 'Doran®', 'Doril®', 'Novalgina®'],
-    fabricante: ['Boehring De Angeli', 'União Química', 'Sarsa', 'Sanofi Wintthrop', 'Brasifa', 'Bergamo', 'Cazi', 'EMS', 'Neo-Química', 'Teuto-Brasileiro', 'Vital Brazil', 'Q:I.F', 'Dorsay', 'Hocchst']
+    nomeComercial: [
+      'Anador®',
+      'Analgex®',
+      'Baralgin®',
+      'Conmel®',
+      'Debela®',
+      'Dipirona®',
+      'Doran®',
+      'Doril®',
+      'Novalgina®'
+    ],
+    fabricante: [
+      'Boehring De Angeli',
+      'União Química',
+      'Sarsa',
+      'Sanofi Wintthrop',
+      'Brasifa',
+      'Bergamo',
+      'Cazi',
+      'EMS',
+      'Neo-Química',
+      'Teuto-Brasileiro',
+      'Vital Brazil',
+      'Q:I.F',
+      'Dorsay',
+      'Hocchst'
+    ]
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Mestranol',
     categoria: 'Estrogênio',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Naftaleno',
     categoria: '',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Neoarsfenamina',
     categoria: 'Bactericida',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Nitrofurantoína',
     categoria: 'Antibacteriano (nitrofurano)',
     nomeComercial: ['Macrodantina®', 'Urogen®'],
     fabricante: ['Schering-Plough', 'Prodotti']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Nitrofurazona',
     categoria: 'Antibacteriano (nitrofurano)',
     nomeComercial: ['Furacin®', 'Alivioderm®', 'Caziderm®', 'Nitrofurazona®'],
-    fabricante: ['Schering-Plough', 'O.I.F.', 'Cazi', 'União Química', 'Veafarm']
+    fabricante: [
+      'Schering-Plough',
+      'O.I.F.',
+      'Cazi',
+      'União Química',
+      'Veafarm'
+    ]
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Norfloxacino',
     categoria: 'Antibacteriano (fluorquinolona)',
-    nomeComercial: ['Floxacin®', 'Chibroxin®', 'Floxinol®', 'Noracin®', 'Quinoform®', 'Respexil®', 'Uritrat NF®', 'Uroflox®', 'Uroplex®'],
-    fabricante: ['Merck Sharp & Dohme', 'Millet Roux', 'Cibran', 'E M S', 'Prodome', 'Libbs', 'Farmion', 'Sintofarma']
+    nomeComercial: [
+      'Floxacin®',
+      'Chibroxin®',
+      'Floxinol®',
+      'Noracin®',
+      'Quinoform®',
+      'Respexil®',
+      'Uritrat NF®',
+      'Uroflox®',
+      'Uroplex®'
+    ],
+    fabricante: [
+      'Merck Sharp & Dohme',
+      'Millet Roux',
+      'Cibran',
+      'E M S',
+      'Prodome',
+      'Libbs',
+      'Farmion',
+      'Sintofarma'
+    ]
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: '',
     categoria: 'Niridazole',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Ofloxacino',
     categoria: 'Antibacteriano (fluorquinolona)',
     nomeComercial: ['Floxstat®', 'Oflox®', 'Ofloxan'],
     fabricante: ['Cilag', 'Allergan-Lok', 'Janssen']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Pamaquina',
     categoria: 'Antimalárico',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Pentaquina',
     categoria: 'Antimalárico',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Piridium',
     categoria: '',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Primaquina',
     categoria: 'Antimalárico',
     nomeComercial: ['Primaquin®', 'Primaquina®', 'Primaquina Kinder®'],
     fabricante: ['Farmoquímica', 'Endoterápica do Brasil', 'Kinder']
   },
-  { id: uuid.v4(),
-    substanciaAtiva: 'Substância Ativa',
-    categoria: 'Categoria',
-    nomeComercial: 'Nome Comercial',
-    fabricante: 'Fabricante'
-  },
-  { id: uuid.v4(),
+
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Probenicida',
-    categoria: 'Agente antigota-',
-    nomeComercial: 'Probecilin®, Gonocilin®, Degona®',
-    fabricante: 'EurofarmaUnião Química Prodotti'
+    categoria: 'Agente antigota',
+    nomeComercial: ['Probecilin®', 'Gonocilin®', 'Degona®'],
+    fabricante: ['Eurofarma', 'União Química', 'Prodotti']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Quinidina',
     categoria: 'Antiarrítmico',
-    nomeComercial: 'Natisedine®, Quinicardine® Quinidine Duriles®',
-    fabricante: 'Barrenne Astra'
+    nomeComercial: ['Natisedine®', 'Quinicardine®', 'Quinidine', 'Duriles®'],
+    fabricante: ['Barrenne', 'Astra']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Quinocida',
     categoria: 'Antimalárico',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Sulfacetamida',
     categoria: 'Antibacteriano (sulfonamida)',
-    nomeComercial: 'Uromix®, Vagi-Sulfa0',
-    fabricante: 'Breves Cilag'
+    nomeComercial: ['Uromix®', 'Vagi-Sulfa®'],
+    fabricante: ['Breves', 'Cilag']
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Sulfametoxazol',
     categoria: 'Antibacteriano (sulfonamida)',
-    nomeComercial: 'Bacteracin®, Bactrim®,Infectrin0, Neotrin®',
-    fabricante: 'Teuto-BrasileiroRacheBoehring De Angeli Neo-Química'
+    nomeComercial: ['Bacteracin®', 'Bactrim®', 'Infectrin®', 'Neotrin®'],
+    fabricante: [
+      'Teuto-Brasileiro',
+      'Roche',
+      'Boehring De Angeli',
+      'Neo-Química'
+    ]
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Sulfametoxipirimidina',
-    categoria: 'Antibacteriano /sulfonamida',
+    categoria: 'Antibacteriano / sulfonamida',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Sulfanilamida',
     categoria: 'Anti-séptico',
-    nomeComercial: 'Sulfanilamida Pó Medic®',
+    nomeComercial: ['Sulfanilamida Pó Medic®'],
     fabricante: 'Medic'
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Sulfapiridina',
     categoria: 'Antibacteriano',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Sulfasalazina',
     categoria: 'Antibacteriano/sulfonamida',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
-    substanciaAtiva: 'TrimtrGto)Jeno...._,',
+  {
+    id: uuid.v4(),
+    substanciaAtiva: 'Trimtrotolueno',
     categoria: '',
     nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
-    substanciaAtiva: 'Urdo Oxiiase',
+  {
+    id: uuid.v4(),
+    substanciaAtiva: 'Urato Oxidase',
     categoria: '',
-    nomeComercial: 'I',
+    nomeComercial: [],
     fabricante: []
   },
-  { id: uuid.v4(),
+  {
+    id: uuid.v4(),
     substanciaAtiva: 'Vitamina K',
     categoria: '',
     nomeComercial: [],
