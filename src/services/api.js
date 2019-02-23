@@ -1,13 +1,13 @@
 // Data
-import medicinesNotAllowed from '../data/medicinesNotAllowed';
-import medicinesAllowed from '../data/medicinesAllowed';
+import medicinesNotAllowedData from '../data/medicinesNotAllowedData';
+import medicinesAllowedData from '../data/medicinesAllowedData';
 
 const TIME = 2000;
 
 export const getMedicinesNotAllowed = async () => {
   return new Promise(resolve =>
     setTimeout(() => {
-      resolve(medicinesNotAllowed);
+      resolve(medicinesNotAllowedData);
     }, TIME)
   );
 };
@@ -15,7 +15,7 @@ export const getMedicinesNotAllowed = async () => {
 export const getMedicinesAllowed = async () => {
   return new Promise(resolve =>
     setTimeout(() => {
-      resolve(medicinesAllowed);
+      resolve(medicinesAllowedData);
     }, TIME)
   );
 };

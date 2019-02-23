@@ -69,10 +69,10 @@ class MedicinesNotAllowed extends Component {
 
       rowsFilter = rows.filter(value => {
         return (
-          value.activeSubstance.toLowerCase().indexOf(filter.toLowerCase()) !==
+          value.substanciaAtiva.toLowerCase().indexOf(filter.toLowerCase()) !==
             -1 ||
-          (value.category &&
-            value.category.toLowerCase().indexOf(filter.toLowerCase()) !== -1)
+          (value.categoria &&
+            value.categoria.toLowerCase().indexOf(filter.toLowerCase()) !== -1)
         );
       });
 
@@ -134,14 +134,14 @@ class MedicinesNotAllowed extends Component {
                   onClick={() => this.showMedicineInfo(row)}
                 >
                   <TableCell component="th" scope="row" align="left">
-                    {row.activeSubstance}
+                    {row.substanciaAtiva}
                   </TableCell>
-                  <TableCell align="left">{row.category}</TableCell>
+                  <TableCell align="left">{row.categoria}</TableCell>
                   <TableCell align="center">
-                    {row.commercialName.join(', ')}
+                    {row.nomeComercial.join(', ')}
                   </TableCell>
                   <TableCell align="center">
-                    {row.manufacturer.join(', ')}
+                    {row.fabricante.join(', ')}
                   </TableCell>
                 </TableRow>
               );
@@ -163,34 +163,34 @@ class MedicinesNotAllowed extends Component {
               Substância Ativa:
               <br />
             </DialogContentText>
-            <DialogContentText>{row.activeSubstance}</DialogContentText>
+            <DialogContentText>{row.substanciaAtiva}</DialogContentText>
 
             <DialogContentText className={classes.label}>
               Categoria:
               <br />
             </DialogContentText>
-            <DialogContentText>{row.category}</DialogContentText>
+            <DialogContentText>{row.categoria}</DialogContentText>
 
-            {row.commercialName && row.commercialName.length > 0 && (
+            {row.nomeComercial && row.nomeComercial.length > 0 && (
               <Fragment>
                 <DialogContentText className={classes.label}>
                   Nome Comercial:
                   <br />
                 </DialogContentText>
                 <DialogContentText>
-                  {row.commercialName.join(', ')}
+                  {row.nomeComercial.join(', ')}
                 </DialogContentText>
               </Fragment>
             )}
 
-            {row.manufacturer && row.manufacturer.length > 0 && (
+            {row.fabricante && row.fabricante.length > 0 && (
               <Fragment>
                 <DialogContentText className={classes.label}>
                   Fabricante:
                   <br />
                 </DialogContentText>
                 <DialogContentText>
-                  {row.manufacturer.join(', ')}
+                  {row.fabricante.join(', ')}
                 </DialogContentText>
               </Fragment>
             )}

@@ -217,7 +217,7 @@ export default [
   },
   {
     id: uuid.v4(),
-    substanciaAtiva: 'Metamizol_',
+    substanciaAtiva: 'Metamizol',
     categoria: 'Analgésico e Antipirético',
     nomeComercial: [
       'Anador®',
@@ -409,7 +409,7 @@ export default [
     substanciaAtiva: 'Sulfanilamida',
     categoria: 'Anti-séptico',
     nomeComercial: ['Sulfanilamida Pó Medic®'],
-    fabricante: 'Medic'
+    fabricante: ['Medic']
   },
   {
     id: uuid.v4(),
