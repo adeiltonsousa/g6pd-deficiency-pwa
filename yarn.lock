@@ -2724,6 +2724,10 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
+desacentuador@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/desacentuador/-/desacentuador-1.0.0.tgz#a2f73a9e0220d6f9ef496ee3adb7aaeb59a536cf"
+
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"

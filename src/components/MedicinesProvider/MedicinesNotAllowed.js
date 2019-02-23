@@ -1,6 +1,7 @@
 // Packages
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
+import removeAccents from 'desacentuador';
 
 // Material UI
 import Button from '@material-ui/core/Button';
@@ -69,10 +70,13 @@ class MedicinesNotAllowed extends Component {
 
       rowsFilter = rows.filter(value => {
         return (
-          value.substanciaAtiva.toLowerCase().indexOf(filter.toLowerCase()) !==
-            -1 ||
+          removeAccents(value.substanciaAtiva.toLowerCase()).indexOf(
+            removeAccents(filter.toLowerCase())
+          ) !== -1 ||
           (value.categoria &&
-            value.categoria.toLowerCase().indexOf(filter.toLowerCase()) !== -1)
+            removeAccents(value.categoria.toLowerCase()).indexOf(
+              removeAccents(filter.toLowerCase())
+            ) !== -1)
         );
       });
 
